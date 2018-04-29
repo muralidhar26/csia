@@ -3,13 +3,13 @@ sourceSets.main.java.srcDirs = ['components/csia-exercises/src']
 
 task myRun1(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
-    main = "com.exercises.csia.ch01.HelloWorld"
+    main = "com.exercises.csia.ch01_1.HelloWorld"
 }
 
 task myRun2(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
-    main = "com.exercises.csia.ch01.HelloWorld"
-    main = "com.exercises.csia.ch01.HelloWorldRepeat"
+    main = "com.exercises.csia.ch01_1.HelloWorld"
+    main = "com.exercises.csia.ch01_1.HelloWorldRepeat"
     args "5"
 }
 

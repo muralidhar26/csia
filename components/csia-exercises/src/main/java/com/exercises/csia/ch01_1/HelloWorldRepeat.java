@@ -1,4 +1,4 @@
-package com.exercises.csia.ch01;
+package com.exercises.csia.ch01_1;
 
 public class HelloWorldRepeat {
 
