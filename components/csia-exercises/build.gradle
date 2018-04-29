@@ -1,0 +1,19 @@
+
+sourceSets.main.java.srcDirs = ['components/csia-exercises/src']
+
+task myRun1(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01.HelloWorld"
+}
+
+task myRun2(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01.HelloWorld"
+    main = "com.exercises.csia.ch01.HelloWorldRepeat"
+    args "5"
+}
+
+task myRunAll(){
+    dependsOn myRun1
+    dependsOn myRun2
+}
