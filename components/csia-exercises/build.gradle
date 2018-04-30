@@ -30,7 +30,16 @@ task myRun5(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
     main = "com.exercises.csia.ch01_2.LeapYear"
     args "1996"
-
+}
+task myRun6(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.Distance"
+    args "7"
+    args "8"
+}
+task myRun7(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.SumOfTwoDice"
 }
 task myRunAll(){
     dependsOn myRun1
@@ -38,6 +47,8 @@ task myRunAll(){
     dependsOn myRun3
     dependsOn myRun4
     dependsOn myRun5
+    dependsOn myRun6
+    dependsOn myRun7
 }
 
 
