@@ -8,12 +8,36 @@ task myRun1(type: JavaExec) {
 
 task myRun2(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
-    main = "com.exercises.csia.ch01_1.HelloWorld"
     main = "com.exercises.csia.ch01_1.HelloWorldRepeat"
     args "5"
 }
 
+task myRun3(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.DoubleOps"
+    args "6.1"
+    args "2.1"
+}
+
+task myRun4(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.Quadratic"
+    args "0"
+    args "-25"
+}
+
+task myRun5(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.LeapYear"
+    args "1996"
+
+}
 task myRunAll(){
     dependsOn myRun1
     dependsOn myRun2
+    dependsOn myRun3
+    dependsOn myRun4
+    dependsOn myRun5
 }
+
+
