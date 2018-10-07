@@ -34,7 +34,7 @@ task myRun5(type: JavaExec) {
 task myRun6(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
     main = "com.exercises.csia.ch01_2.Distance"
-    args "7"
+    args "9"
     args "8"
 }
 task myRun7(type: JavaExec) {
