@@ -14,5 +14,8 @@ public class Quadratic {
 
         System.out.println(root1);
         System.out.println(root2);
+        // adding the Ex2.1.13
+
+        System.out.println("Answer for Ex_2.1.13-->"+ (Math.sqrt(2)*Math.sqrt(2) == 2));
     }
 }
