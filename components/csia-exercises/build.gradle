@@ -41,6 +41,11 @@ task myRun7(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
     main = "com.exercises.csia.ch01_2.SumOfTwoDice"
 }
+task myRun8(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.Ex1_2_2"
+    args "30"
+}
 task myRunAll(){
     dependsOn myRun1
     dependsOn myRun2
@@ -49,6 +54,7 @@ task myRunAll(){
     dependsOn myRun5
     dependsOn myRun6
     dependsOn myRun7
+    dependsOn myRun8
 }
 
 
