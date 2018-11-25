@@ -92,7 +92,13 @@ task myRun16(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
     main = "com.exercises.csia.ch01_2.RandomGaussian"
 }
-
+task myRun17(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.OrderCheck"
+    args "9"
+    args "4"
+    args "2"
+}
 task myRunAll(){
     dependsOn myRun1
     dependsOn myRun2
@@ -110,7 +116,7 @@ task myRunAll(){
     dependsOn myRun14
     dependsOn myRun15
     dependsOn myRun16
-
+    dependsOn myRun17
 }
 
 
