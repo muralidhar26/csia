@@ -99,6 +99,14 @@ task myRun17(type: JavaExec) {
     args "4"
     args "2"
 }
+task myRun18(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.exercises.csia.ch01_2.DayoftheWeek"
+    args "1978"
+    args "11"
+    args "24"
+}
+
 task myRunAll(){
     dependsOn myRun1
     dependsOn myRun2
@@ -117,6 +125,7 @@ task myRunAll(){
     dependsOn myRun15
     dependsOn myRun16
     dependsOn myRun17
+    dependsOn myRun18
 }
 
 
